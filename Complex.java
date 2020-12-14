@@ -6,6 +6,11 @@ class Complex
 	{
 		real = imag=0.0;
 	}
+	public void add()
+	{
+		double sum =real+imag; 
+		System.out.println("sum=" + sum);
+	}
 	public Complex(double real,double imag)
 	{
 		this.real = real;
@@ -14,5 +19,6 @@ class Complex
 	public static void main(String[] args) 
 	{
 		Complex c = new Complex(1.5,2.5);
+		c.add();
 	}
 }
